@@ -38,6 +38,6 @@ def delete_file(node, broadcast_time, log_position_time, window_time_threshold, 
 
 
 def load_position_dataframe(node, broadcast_time, log_position_time, window_time_threshold, sim_time, path):
-    header = [f'node_{node}', f'timestamp_{node}', f'x_pos_{node}', f'y_pos_{node}']
+    header = [f'node_{node}', f'timestamp', f'x_pos_{node}', f'y_pos_{node}']
     type_ = 'position'
     return load_dataframe(node, broadcast_time, log_position_time, window_time_threshold, sim_time, path, type_, header)
